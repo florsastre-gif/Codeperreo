@@ -28,7 +28,7 @@ st.markdown("""
 def generar_perreo(key, concepto, genero, mood, bpm):
     try:
         genai.configure(api_key=key)
-        model = genai.GenerativeModel('gemini-1.5-flash') # Modelo estable
+        model = genai.GenerativeModel('gemini-2.5-flash') # Modelo estable
         
         prompt = f"""
         Escribe una letra de canción urbana sobre este concepto tech: {concepto}.
